@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+@font-face {
+  font-family: 'Quattrocento';
+  src: local('fonts/QuattrocentoSans-Regular.ttf') format('truetype');
+}
+/*
+.sans-serif-font() {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+*/
 html,
 body {
   height: 100%;
@@ -13,7 +22,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #0d4f8b;
+  border-color: #d4af37;
   border-width: 3px;
   max-width: 50px;
 }
@@ -24,11 +33,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #0d4f8b;
+  color: #d4af37;
 }
 a:hover,
 a:focus {
-  color: #09345c;
+  color: #b29126;
 }
 h1,
 h2,
@@ -36,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -44,10 +53,10 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #0d4f8b;
+  background-color: #d4af37;
 }
 .bg-dark {
-  background-color: #222222;
+  background-color: #708090;
   color: white;
 }
 .text-faded {
@@ -64,36 +73,36 @@ aside {
 }
 .navbar-default {
   background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border-color: rgba(112, 128, 144, 0.05);
+  font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #0d4f8b;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: #d4af37;
+  font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #09345c;
+  color: #b29126;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  color: #222222;
+  color: #708090;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #0d4f8b;
+  color: #d4af37;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #0d4f8b !important;
+  color: #d4af37 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -122,23 +131,23 @@ aside {
   }
   .navbar-default.affix {
     background-color: white;
-    border-color: rgba(34, 34, 34, 0.05);
+    border-color: rgba(112, 128, 144, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #0d4f8b;
+    color: #d4af37;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #09345c;
+    color: #b29126;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
-    color: #222222;
+    color: #708090;
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #0d4f8b;
+    color: #d4af37;
   }
 }
 header {
@@ -224,7 +233,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(13, 79, 139, 0.9);
+  background: rgba(212, 175, 55, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -243,7 +252,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -269,14 +278,14 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #0d4f8b;
+  color: #d4af37;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 .btn-default {
-  color: #222222;
+  color: #708090;
   background-color: #ffffff;
   border-color: #ffffff;
   -webkit-transition: all 0.35s;
@@ -289,7 +298,7 @@ header .header-content .header-content-inner p {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222222;
+  color: #708090;
   background-color: #f2f2f2;
   border-color: #ededed;
 }
@@ -321,12 +330,12 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: #ffffff;
-  background-color: #222222;
+  background-color: #708090;
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #0d4f8b;
-  border-color: #0d4f8b;
+  background-color: #d4af37;
+  border-color: #d4af37;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -338,8 +347,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #0b4274;
-  border-color: #0a3c6a;
+  background-color: #c7a22b;
+  border-color: #be9b29;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -364,15 +373,15 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #0d4f8b;
-  border-color: #0d4f8b;
+  background-color: #d4af37;
+  border-color: #d4af37;
 }
 .btn-primary .badge {
-  color: #0d4f8b;
+  color: #d4af37;
   background-color: #ffffff;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -384,12 +393,12 @@ fieldset[disabled] .btn-primary.active {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #222222;
+  background: #708090;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #222222;
+  background: #708090;
 }
 img::selection {
   color: white;
@@ -400,5 +409,9 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #222222;
+  webkit-tap-highlight-color: #708090;
+}
+@font-face {
+  font-family: 'Quattrocento';
+  src: url('QuattrocentoSans-Regular.ttf') format('truetype');
 }
