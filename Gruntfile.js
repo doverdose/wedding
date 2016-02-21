@@ -5,8 +5,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                src: 'public/js/<%= pkg.name %>.js',
+                dest: 'public/js/<%= pkg.name %>.min.js'
             }
         },
         less: {
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                     paths: ["css"]
                 },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.css": "public/less/<%= pkg.name %>.less"
                 }
             },
             minified: {
@@ -24,13 +24,13 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.min.css": "public/less/<%= pkg.name %>.less"
                 }
             }
         },
         banner: '/*!\n' +
             ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Copyright 2016-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
             ' */\n',
         usebanner: {
@@ -40,20 +40,20 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['public/css/<%= pkg.name %>.css', 'public/css/<%= pkg.name %>.min.css', 'public/js/<%= pkg.name %>.min.js']
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
+                files: ['public/js/<%= pkg.name %>.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn: false,
                 },
             },
             less: {
-                files: ['less/*.less'],
+                files: ['public/less/*.less'],
                 tasks: ['less'],
                 options: {
                     spawn: false,
