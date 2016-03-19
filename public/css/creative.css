@@ -4,15 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-@font-face {
-  font-family: 'Quattrocento';
-  src: local('fonts/QuattrocentoSans-Regular.ttf') format('truetype');
-}
-/*
-.sans-serif-font() {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-*/
 html,
 body {
   height: 100%;
@@ -22,7 +13,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #d4af37;
+  border-color: #dcbf5e;
   border-width: 3px;
   max-width: 50px;
 }
@@ -33,11 +24,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #d4af37;
+  color: #dcbf5e;
 }
 a:hover,
 a:focus {
-  color: #b29126;
+  color: #d3ae34;
 }
 h1,
 h2,
@@ -53,7 +44,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #d4af37;
+  background-color: #dcbf5e;
 }
 .bg-dark {
   background-color: #708090;
@@ -80,14 +71,14 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #d4af37;
+  color: #dcbf5e;
   font-family: 'Quattrocento', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #b29126;
+  color: #d3ae34;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -98,11 +89,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #d4af37;
+  color: #dcbf5e;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #d4af37 !important;
+  color: #dcbf5e !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -134,12 +125,12 @@ aside {
     border-color: rgba(112, 128, 144, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #d4af37;
+    color: #dcbf5e;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #b29126;
+    color: #d3ae34;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -147,7 +138,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #d4af37;
+    color: #dcbf5e;
   }
 }
 header {
@@ -233,7 +224,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(212, 175, 55, 0.9);
+  background: rgba(220, 191, 94, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -278,7 +269,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #d4af37;
+  color: #dcbf5e;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -334,8 +325,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #d4af37;
-  border-color: #d4af37;
+  background-color: #dcbf5e;
+  border-color: #dcbf5e;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -347,8 +338,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #c7a22b;
-  border-color: #be9b29;
+  background-color: #d7b749;
+  border-color: #d6b341;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -373,11 +364,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #d4af37;
-  border-color: #d4af37;
+  background-color: #dcbf5e;
+  border-color: #dcbf5e;
 }
 .btn-primary .badge {
-  color: #d4af37;
+  color: #dcbf5e;
   background-color: #ffffff;
 }
 .btn {
@@ -389,6 +380,11 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   padding: 15px 30px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 ::-moz-selection {
   color: white;
